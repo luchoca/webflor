@@ -1,21 +1,4 @@
 {
-  "contact": {
-    "form_message_label": "Mensaje",
-    "eyebrow": "Escribime",
-    "phone_link": "+59899652243",
-    "phone_display": "+598 99 652 243",
-    "instagram": "https://instagram.com/psi.flormoreira",
-    "form_email_label": "Email",
-    "whatsapp_number": "59899652243",
-    "subtitle": "Por consultas o para solicitar más información, completá el formulario o escribime directamente. Respondemos a la brevedad.",
-    "title": "Tomá el primer paso",
-    "form_submit_text": "Enviar mensaje",
-    "whatsapp_message": "Hola! Me interesa agendar una consulta psicológica. ¿Podrías brindarme más información?",
-    "form_name_label": "Nombre",
-    "email": "contacto@florenciamoreira.com",
-    "form_title": "Enviar mensaje",
-    "linkedin": "https://www.linkedin.com/in/florencia-moreira-893b44162/"
-  },
   "meta": {
     "title": "Florencia Moreira · Psicóloga en Uruguay | Psicoterapia",
     "description": "Psicóloga en Uruguay. Psicoterapia para adolescentes y adultos. Atención psicológica online y presencial."
@@ -24,6 +7,36 @@
     "logo": "/images/logo.svg",
     "name": "Florencia Moreira",
     "role": "Psicoterapeuta"
+  },
+  "hero": {
+    "eyebrow": "Psicoterapia en Uruguay",
+    "title_line1": "Atención psicológica",
+    "title_line2": "de confianza",
+    "subtitle": "Psicoterapia para adolescentes y adultos. Un espacio seguro para crecer, conocerte y transformar lo que ya no querés sostener.",
+    "cta_primary_text": "Ver modalidades",
+    "cta_primary_link": "#modalidades",
+    "cta_secondary_text": "Contactar",
+    "cta_secondary_link": "#contacto",
+    "image": "/images/divan.jpg",
+    "image_caption": "Espacio de psicoterapia"
+  },
+  "modalities": {
+    "eyebrow": "Formas de atención",
+    "title": "Dos modalidades para acompañarte",
+    "items": [
+      {
+        "name": "Online",
+        "description": "Psicoterapia desde cualquier lugar. Atención psicológica por videollamada, con la misma calidad y presencia que en persona.",
+        "cta_text": "Coordinar consulta",
+        "whatsapp_message": "Hola! Me interesa coordinar una consulta psicológica online. ¿Podrías brindarme más información sobre horarios y modalidad de videollamada?"
+      },
+      {
+        "name": "Presencial en Paysandú",
+        "description": "Atención psicológica presencial en consultorio, en un ambiente cálido y confidencial.",
+        "cta_text": "Coordinar consulta",
+        "whatsapp_message": "Hola! Me interesa coordinar una consulta psicológica presencial en Paysandú. ¿Podrías brindarme más información sobre horarios y ubicación del consultorio?"
+      }
+    ]
   },
   "about": {
     "eyebrow": "Quién soy",
@@ -44,23 +57,6 @@
       "Depresión",
       "Autoestima"
     ]
-  },
-  "hero": {
-    "image_caption": "Florencia Moreira · Psicoterapeuta",
-    "cta_primary_link": "#modalidades",
-    "cta_secondary_text": "Contactar",
-    "eyebrow": "Psicoterapia en Uruguay",
-    "cta_secondary_link": "#contacto",
-    "title_line1": "Atención psicológica",
-    "title_line2": "de confianza",
-    "subtitle": "Psicoterapia para adolescentes y adultos. Un espacio seguro para crecer, conocerte y transformar lo que ya no querés sostener.",
-    "cta_primary_text": "Ver modalidades",
-    "image": "/images/fotoperfilflor.jpeg"
-  },
-  "footer": {
-    "name": "Florencia Moreira",
-    "text": "Psicoterapeuta · Uruguay",
-    "email": "contacto@florenciamoreira.com"
   },
   "specialties": {
     "eyebrow": "Especialidades",
@@ -106,22 +102,26 @@
       "text": "Explorar dudas o compartir experiencias en un espacio terapéutico ayuda a integrar la sexualidad como parte esencial del bienestar, con respeto por los tiempos y necesidades de cada persona."
     }
   ],
-  "modalities": {
-    "eyebrow": "Formas de atención",
-    "title": "Dos modalidades para acompañarte",
-    "items": [
-      {
-        "name": "Online",
-        "description": "Psicoterapia desde cualquier lugar. Atención psicológica por videollamada, con la misma calidad y presencia que en persona.",
-        "cta_text": "Coordinar consulta",
-        "whatsapp_message": "Hola! Me interesa coordinar una consulta psicológica online. ¿Podrías brindarme más información sobre horarios y modalidad de videollamada?"
-      },
-      {
-        "name": "Presencial en Paysandú",
-        "description": "Atención psicológica presencial en consultorio, en un ambiente cálido y confidencial.",
-        "cta_text": "Coordinar consulta",
-        "whatsapp_message": "Hola! Me interesa coordinar una consulta psicológica presencial. ¿Podrías brindarme más información sobre horarios y ubicación del consultorio?"
-      }
-    ]
+  "contact": {
+    "eyebrow": "Escribime",
+    "title": "Tomá el primer paso",
+    "subtitle": "Por consultas o para solicitar más información, completá el formulario o escribime directamente. Respondemos a la brevedad.",
+    "email": "contacto@florenciamoreira.com",
+    "phone_display": "+598 99 652 243",
+    "phone_link": "+59899652243",
+    "instagram": "https://www.instagram.com/psi.florenciamoreira?stkn=MXhlNzFlOXd1amEydA%3D%3D",
+    "linkedin": "https://www.linkedin.com/in/florencia-moreira-893b44162/",
+    "whatsapp_number": "59899652243",
+    "whatsapp_message": "Hola! Me interesa agendar una consulta psicológica. ¿Podrías brindarme más información?",
+    "form_title": "Enviar mensaje",
+    "form_name_label": "Nombre",
+    "form_email_label": "Email",
+    "form_message_label": "Mensaje",
+    "form_submit_text": "Enviar mensaje"
+  },
+  "footer": {
+    "name": "Florencia Moreira",
+    "text": "Psicoterapeuta · Uruguay",
+    "email": "contacto@florenciamoreira.com"
   }
 }
