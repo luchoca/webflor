@@ -17,7 +17,7 @@
     "cta_primary_link": "#modalidades",
     "cta_secondary_text": "Contactar",
     "cta_secondary_link": "#contacto",
-    "image": "/images/hero.jpg",
+    "image": "/images/fotoperfilflor.jpeg",
     "image_caption": "Florencia Moreira · Psicoterapeuta"
   },
   "modalities": {
@@ -41,7 +41,7 @@
   "about": {
     "eyebrow": "Quién soy",
     "title": "Florencia Moreira",
-    "image": "/images/hero.jpg",
+    "image": "/images/fotoperfilflor.jpeg",
     "bullets": [
       "Egresada de la Universidad Católica del Uruguay",
       "Posgrado en Violencia Basada en Género",
