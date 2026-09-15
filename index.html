@@ -1,130 +1,150 @@
 <!doctype html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Florencia Moreira · Psicóloga en Uruguay</title>
-<meta id="meta-description" name="description" content="">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Karla:wght@400;500;600;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Florencia Moreira · Psicóloga en Uruguay</title>
+  <meta id="meta-description" name="description" content="">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Karla:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
+
 <body>
 
-<header class="site-header">
-  <nav class="nav wrap">
-    <a class="brand" href="#inicio">
-      <img id="brand-logo" src="/images/logo.svg" alt="Logo" onerror="this.style.display='none'">
-      <span class="brand-text"><strong id="brand-name"></strong><span id="brand-role"></span></span>
-    </a>
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">&#9776;</button>
-    <ul class="nav-links" id="navLinks">
-      <li><a href="#inicio">Inicio</a></li>
-      <li><a href="#modalidades">Modalidades</a></li>
-      <li><a href="#sobre-mi">Sobre mí</a></li>
-      <li><a href="#especialidades">Especialidades</a></li>
-      <li><a href="#contacto">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
+  <header class="site-header">
+    <nav class="nav wrap">
+      <a class="brand" href="#inicio">
+        <img id="brand-logo" src="/images/logo.svg" alt="Logo" onerror="this.style.display='none'">
+        <span class="brand-text"><strong id="brand-name"></strong><span id="brand-role"></span></span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#modalidades">Modalidades</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#especialidades">Especialidades</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
-<main>
-  <!-- HERO -->
-  <section class="hero" id="inicio">
-    <div class="wrap hero-grid">
-      <div>
-        <span class="eyebrow" id="hero-eyebrow"></span>
-        <h1><span id="hero-title1"></span><br><span id="hero-title2"></span></h1>
-        <p class="lead" id="hero-subtitle"></p>
-        <div class="hero-ctas">
-          <a class="btn btn-primary" id="hero-cta1" href="#modalidades"></a>
-          <a class="btn btn-ghost" id="hero-cta2" href="#contacto"></a>
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="inicio">
+      <div class="wrap hero-grid">
+        <div>
+          <span class="eyebrow" id="hero-eyebrow"></span>
+          <h1><span id="hero-title1"></span><br><span id="hero-title2"></span></h1>
+          <p class="lead" id="hero-subtitle"></p>
+          <div class="hero-ctas">
+            <a class="btn btn-primary" id="hero-cta1" href="#modalidades"></a>
+            <a class="btn btn-ghost" id="hero-cta2" href="#contacto"></a>
+          </div>
+        </div>
+        <figure class="hero-media">
+          <img id="fotoperfil" src="/images/fotoperfilflor.jpeg" alt="Florencia Moreira">
+          <figcaption id="hero-caption"></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- MODALIDADES -->
+    <section class="section-alt" id="modalidades">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow" id="mod-eyebrow"></span>
+          <h2 id="mod-title"></h2>
+        </div>
+        <div class="modality-grid" id="mod-grid"></div>
+      </div>
+    </section>
+
+    <!-- SOBRE MI -->
+    <section id="sobre-mi">
+      <div class="wrap about-grid">
+        <img id="about-image" src="/images/hero.jpg" alt="Florencia Moreira">
+        <div>
+          <span class="eyebrow" id="about-eyebrow"></span>
+          <h2 id="about-title"></h2>
+          <ul class="bullets" id="about-bullets"></ul>
+          <span class="areas-label" id="about-areas-label"></span>
+          <div class="chip-row" id="about-areas"></div>
         </div>
       </div>
-      <figure class="hero-media">
-        <img id="hero-image" src="/images/hero.jpg" alt="Florencia Moreira">
-        <figcaption id="hero-caption"></figcaption>
-      </figure>
-    </div>
-  </section>
+    </section>
 
-  <!-- MODALIDADES -->
-  <section class="section-alt" id="modalidades">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow" id="mod-eyebrow"></span>
-        <h2 id="mod-title"></h2>
+    <!-- ESPECIALIDADES -->
+    <section class="section-alt" id="especialidades">
+      <div class="wrap">
+        <div class="section-head">
+          <span class="eyebrow" id="spec-eyebrow"></span>
+          <h2 id="spec-title"></h2>
+        </div>
+        <div class="specialty-grid" id="spec-grid"></div>
+        <div class="article-list" id="article-list"></div>
       </div>
-      <div class="modality-grid" id="mod-grid"></div>
-    </div>
-  </section>
+    </section>
 
-  <!-- SOBRE MI -->
-  <section id="sobre-mi">
-    <div class="wrap about-grid">
-      <img id="about-image" src="/images/hero.jpg" alt="Florencia Moreira">
-      <div>
-        <span class="eyebrow" id="about-eyebrow"></span>
-        <h2 id="about-title"></h2>
-        <ul class="bullets" id="about-bullets"></ul>
-        <span class="areas-label" id="about-areas-label"></span>
-        <div class="chip-row" id="about-areas"></div>
+    <!-- CONTACTO -->
+    <section id="contacto">
+      <div class="wrap contact-grid">
+        <div class="contact-info">
+          <span class="eyebrow" id="contact-eyebrow"></span>
+          <h2 id="contact-title"></h2>
+          <p id="contact-subtitle" style="color:var(--ink-soft); max-width:38ch;"></p>
+          <div id="contact-lines"></div>
+          <div class="social-row" id="social-row"></div>
+        </div>
+
+        <form class="contact-form" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field"
+          id="contactForm">
+          <input type="hidden" name="form-name" value="contacto">
+          <p style="display:none"><label>No completar: <input name="bot-field"></label></p>
+          <h3 id="form-title" style="font-size:20px; margin-bottom:20px;"></h3>
+          <label id="label-name" for="f-name"></label>
+          <input id="f-name" name="nombre" type="text" required>
+          <label id="label-email" for="f-email"></label>
+          <input id="f-email" name="email" type="email">
+          <label id="label-message" for="f-message"></label>
+          <textarea id="f-message" name="mensaje" required></textarea>
+          <div class="form-status" id="formStatus"></div>
+          <button class="btn btn-primary" type="submit" id="form-submit"
+            style="width:100%; justify-content:center;"></button>
+        </form>
       </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-row">
+      <span id="footer-name"></span>
+      <span id="footer-text"></span>
+      <a id="footer-email" href="#"></a>
     </div>
-  </section>
+  </footer>
 
-  <!-- ESPECIALIDADES -->
-  <section class="section-alt" id="especialidades">
-    <div class="wrap">
-      <div class="section-head">
-        <span class="eyebrow" id="spec-eyebrow"></span>
-        <h2 id="spec-title"></h2>
-      </div>
-      <div class="specialty-grid" id="spec-grid"></div>
-      <div class="article-list" id="article-list"></div>
-    </div>
-  </section>
+  <a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
+    <svg viewBox="0 0 32 32" fill="currentColor">
+      <path
+        d="M16.02 2.67C8.65 2.67 2.67 8.65 2.67 16.02c0 2.53.71 4.9 1.94 6.92L2 30l7.24-2.55a13.3 13.3 0 0 0 6.78 1.85c7.37 0 13.35-5.98 13.35-13.35S23.39 2.67 16.02 2.67zm0 24.13a10.7 10.7 0 0 1-5.9-1.75l-.42-.26-4.3 1.51 1.44-4.19-.28-.43a10.68 10.68 0 1 1 9.46 5.12zm5.86-7.96c-.32-.16-1.9-.94-2.2-1.05-.29-.11-.51-.16-.72.16-.21.32-.83 1.05-1.02 1.27-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.6-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.74-.99-2.38-.26-.62-.53-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.09-1.12 2.67s1.15 3.1 1.31 3.31c.16.21 2.26 3.45 5.48 4.84.77.33 1.36.53 1.83.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37z" />
+    </svg>
+  </a>
 
-  <!-- CONTACTO -->
-  <section id="contacto">
-    <div class="wrap contact-grid">
-      <div class="contact-info">
-        <span class="eyebrow" id="contact-eyebrow"></span>
-        <h2 id="contact-title"></h2>
-        <p id="contact-subtitle" style="color:var(--ink-soft); max-width:38ch;"></p>
-        <div id="contact-lines"></div>
-        <div class="social-row" id="social-row"></div>
-      </div>
-
-      <form class="contact-form" name="contacto" method="POST" data-netlify="true" netlify-honeypot="bot-field" id="contactForm">
-        <input type="hidden" name="form-name" value="contacto">
-        <p style="display:none"><label>No completar: <input name="bot-field"></label></p>
-        <h3 id="form-title" style="font-size:20px; margin-bottom:20px;"></h3>
-        <label id="label-name" for="f-name"></label>
-        <input id="f-name" name="nombre" type="text" required>
-        <label id="label-email" for="f-email"></label>
-        <input id="f-email" name="email" type="email">
-        <label id="label-message" for="f-message"></label>
-        <textarea id="f-message" name="mensaje" required></textarea>
-        <div class="form-status" id="formStatus"></div>
-        <button class="btn btn-primary" type="submit" id="form-submit" style="width:100%; justify-content:center;"></button>
-      </form>
-    </div>
-  </section>
-</main>
-
-<footer>
-  <div class="wrap footer-row">
-    <span id="footer-name"></span>
-    <span id="footer-text"></span>
-    <a id="footer-email" href="#"></a>
-  </div>
-</footer>
-
-<a class="wa-float" id="waFloat" href="#" target="_blank" rel="noopener" aria-label="Escribir por WhatsApp">
-  <svg viewBox="0 0 32 32" fill="currentColor"><path d="M16.02 2.67C8.65 2.67 2.67 8.65 2.67 16.02c0 2.53.71 4.9 1.94 6.92L2 30l7.24-2.55a13.3 13.3 0 0 0 6.78 1.85c7.37 0 13.35-5.98 13.35-13.35S23.39 2.67 16.02 2.67zm0 24.13a10.7 10.7 0 0 1-5.9-1.75l-.42-.26-4.3 1.51 1.44-4.19-.28-.43a10.68 10.68 0 1 1 9.46 5.12zm5.86-7.96c-.32-.16-1.9-.94-2.2-1.05-.29-.11-.51-.16-.72.16-.21.32-.83 1.05-1.02 1.27-.19.21-.37.24-.69.08-.32-.16-1.35-.5-2.57-1.6-.95-.85-1.59-1.9-1.78-2.22-.19-.32-.02-.49.14-.65.14-.14.32-.37.48-.56.16-.19.21-.32.32-.53.11-.21.05-.4-.03-.56-.08-.16-.72-1.74-.99-2.38-.26-.62-.53-.54-.72-.55h-.61c-.21 0-.56.08-.85.4-.29.32-1.12 1.09-1.12 2.67s1.15 3.1 1.31 3.31c.16.21 2.26 3.45 5.48 4.84.77.33 1.36.53 1.83.68.77.24 1.47.21 2.02.13.62-.09 1.9-.78 2.17-1.53.27-.75.27-1.4.19-1.53-.08-.13-.29-.21-.61-.37z"/></svg>
-</a>
-
-<script src="/js/main.js"></script>
+  <script src="/js/main.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
+        }
+      });
+    }
+  </script>
 </body>
+
 </html>
