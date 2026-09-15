@@ -1,0 +1,121 @@
+backend:
+  name: git-gateway
+  branch: main
+
+# Guarda las imágenes subidas por la clienta acá, y el sitio las sirve desde /images/...
+media_folder: "images"
+public_folder: "/images"
+
+locale: "es"
+
+collections:
+  - name: "site"
+    label: "Contenido del sitio"
+    files:
+      - name: "site"
+        label: "Textos, fotos y datos de contacto"
+        file: "content/site.json"
+        fields:
+          - label: "Datos generales (SEO)"
+            name: "meta"
+            widget: "object"
+            fields:
+              - { label: "Título de la página", name: "title", widget: "string" }
+              - { label: "Descripción corta", name: "description", widget: "text" }
+
+          - label: "Encabezado"
+            name: "header"
+            widget: "object"
+            fields:
+              - { label: "Logo", name: "logo", widget: "image" }
+              - { label: "Nombre", name: "name", widget: "string" }
+              - { label: "Rol / profesión", name: "role", widget: "string" }
+
+          - label: "Inicio (Hero)"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Texto pequeño superior", name: "eyebrow", widget: "string" }
+              - { label: "Título - línea 1", name: "title_line1", widget: "string" }
+              - { label: "Título - línea 2", name: "title_line2", widget: "string" }
+              - { label: "Subtítulo", name: "subtitle", widget: "text" }
+              - { label: "Texto botón 1", name: "cta_primary_text", widget: "string" }
+              - { label: "Link botón 1", name: "cta_primary_link", widget: "string" }
+              - { label: "Texto botón 2", name: "cta_secondary_text", widget: "string" }
+              - { label: "Link botón 2", name: "cta_secondary_link", widget: "string" }
+              - { label: "Foto principal", name: "image", widget: "image" }
+              - { label: "Texto bajo la foto", name: "image_caption", widget: "string" }
+
+          - label: "Modalidades de atención"
+            name: "modalities"
+            widget: "object"
+            fields:
+              - { label: "Texto pequeño superior", name: "eyebrow", widget: "string" }
+              - { label: "Título de la sección", name: "title", widget: "string" }
+              - label: "Tarjetas"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Nombre (ej: Online)", name: "name", widget: "string" }
+                  - { label: "Descripción", name: "description", widget: "text" }
+                  - { label: "Texto del botón", name: "cta_text", widget: "string" }
+                  - { label: "Mensaje de WhatsApp prearmado", name: "whatsapp_message", widget: "text" }
+
+          - label: "Sobre mí"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Texto pequeño superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Foto", name: "image", widget: "image" }
+              - { label: "Puntos / formación", name: "bullets", widget: "list" }
+              - { label: "Título 'Áreas de trabajo'", name: "areas_label", widget: "string" }
+              - { label: "Áreas de trabajo (chips)", name: "areas", widget: "list" }
+
+          - label: "Especialidades"
+            name: "specialties"
+            widget: "object"
+            fields:
+              - { label: "Texto pequeño superior", name: "eyebrow", widget: "string" }
+              - { label: "Título de la sección", name: "title", widget: "string" }
+              - label: "Tarjetas de especialidad"
+                name: "items"
+                widget: "list"
+                fields:
+                  - { label: "Título", name: "title", widget: "string" }
+                  - { label: "Descripción", name: "description", widget: "text" }
+
+          - label: "Textos breves (3 bloques)"
+            name: "articles"
+            widget: "list"
+            fields:
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Texto", name: "text", widget: "text" }
+
+          - label: "Contacto"
+            name: "contact"
+            widget: "object"
+            fields:
+              - { label: "Texto pequeño superior", name: "eyebrow", widget: "string" }
+              - { label: "Título", name: "title", widget: "string" }
+              - { label: "Subtítulo", name: "subtitle", widget: "text" }
+              - { label: "Email de contacto (recibe las consultas)", name: "email", widget: "string" }
+              - { label: "Teléfono (texto visible)", name: "phone_display", widget: "string" }
+              - { label: "Teléfono (para el link, sin espacios ni +)", name: "phone_link", widget: "string" }
+              - { label: "Link de Instagram", name: "instagram", widget: "string" }
+              - { label: "Link de LinkedIn", name: "linkedin", widget: "string" }
+              - { label: "Número de WhatsApp (código país + número, sin +)", name: "whatsapp_number", widget: "string" }
+              - { label: "Mensaje de WhatsApp prearmado (botón flotante)", name: "whatsapp_message", widget: "text" }
+              - { label: "Título del formulario", name: "form_title", widget: "string" }
+              - { label: "Etiqueta campo Nombre", name: "form_name_label", widget: "string" }
+              - { label: "Etiqueta campo Email", name: "form_email_label", widget: "string" }
+              - { label: "Etiqueta campo Mensaje", name: "form_message_label", widget: "string" }
+              - { label: "Texto del botón enviar", name: "form_submit_text", widget: "string" }
+
+          - label: "Pie de página"
+            name: "footer"
+            widget: "object"
+            fields:
+              - { label: "Nombre", name: "name", widget: "string" }
+              - { label: "Texto", name: "text", widget: "string" }
+              - { label: "Email", name: "email", widget: "string" }

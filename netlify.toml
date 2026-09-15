@@ -1,0 +1,13 @@
+[build]
+  publish = "."
+  command = ""
+
+[[headers]]
+  for = "/content/site.json"
+  [headers.values]
+    Cache-Control = "no-cache"
+
+# Netlify detecta el formulario "contacto" automáticamente por el atributo
+# data-netlify="true" en index.html. No hace falta configurar nada más acá,
+# pero hay que activar la notificación por email desde el panel de Netlify
+# (ver README.md, paso 5).
