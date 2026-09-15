@@ -17,8 +17,8 @@
     "cta_primary_link": "#modalidades",
     "cta_secondary_text": "Contactar",
     "cta_secondary_link": "#contacto",
-    "image": "/images/fotoperfilflor.jpeg",
-    "image_caption": "Florencia Moreira · Psicoterapeuta"
+    "image": "/images/divan.jpg",
+    "image_caption": "Espacio de psicoterapia"
   },
   "modalities": {
     "eyebrow": "Formas de atención",
@@ -31,10 +31,10 @@
         "whatsapp_message": "Hola! Me interesa coordinar una consulta psicológica online. ¿Podrías brindarme más información sobre horarios y modalidad de videollamada?"
       },
       {
-        "name": "Presencial",
+        "name": "Presencial en Paysandú",
         "description": "Atención psicológica presencial en consultorio, en un ambiente cálido y confidencial.",
         "cta_text": "Coordinar consulta",
-        "whatsapp_message": "Hola! Me interesa coordinar una consulta psicológica presencial. ¿Podrías brindarme más información sobre horarios y ubicación del consultorio?"
+        "whatsapp_message": "Hola! Me interesa coordinar una consulta psicológica presencial en Paysandú. ¿Podrías brindarme más información sobre horarios y ubicación del consultorio?"
       }
     ]
   },
@@ -62,12 +62,30 @@
     "eyebrow": "Especialidades",
     "title": "Áreas de psicoterapia",
     "items": [
-      { "title": "Adolescentes", "description": "Acompañamiento en la etapa de crecimiento, identidad y vínculos." },
-      { "title": "Adultos", "description": "Espacio terapéutico para el autoconocimiento y la transformación personal." },
-      { "title": "Ansiedad y Depresión", "description": "Herramientas para transitar estados emocionales difíciles con apoyo profesional." },
-      { "title": "Violencia de Género", "description": "Atención especializada para procesos de recuperación y fortalecimiento." },
-      { "title": "Sexualidad", "description": "Exploración libre de prejuicios, con información y acompañamiento profesional." },
-      { "title": "Vínculos y Autoestima", "description": "Trabajo en relaciones afectivas y en la relación con uno mismo." }
+      {
+        "title": "Adolescentes",
+        "description": "Acompañamiento en la etapa de crecimiento, identidad y vínculos."
+      },
+      {
+        "title": "Adultos",
+        "description": "Espacio terapéutico para el autoconocimiento y la transformación personal."
+      },
+      {
+        "title": "Ansiedad y Depresión",
+        "description": "Herramientas para transitar estados emocionales difíciles con apoyo profesional."
+      },
+      {
+        "title": "Violencia de Género",
+        "description": "Atención especializada para procesos de recuperación y fortalecimiento."
+      },
+      {
+        "title": "Sexualidad",
+        "description": "Exploración libre de prejuicios, con información y acompañamiento profesional."
+      },
+      {
+        "title": "Vínculos y Autoestima",
+        "description": "Trabajo en relaciones afectivas y en la relación con uno mismo."
+      }
     ]
   },
   "articles": [
@@ -91,7 +109,7 @@
     "email": "contacto@florenciamoreira.com",
     "phone_display": "+598 99 652 243",
     "phone_link": "+59899652243",
-    "instagram": "https://instagram.com/psi.flormoreira",
+    "instagram": "https://www.instagram.com/psi.florenciamoreira?stkn=MXhlNzFlOXd1amEydA%3D%3D",
     "linkedin": "https://www.linkedin.com/in/florencia-moreira-893b44162/",
     "whatsapp_number": "59899652243",
     "whatsapp_message": "Hola! Me interesa agendar una consulta psicológica. ¿Podrías brindarme más información?",
