@@ -11,6 +11,7 @@
     href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Karla:wght@400;500;600;700&display=swap"
     rel="stylesheet">
   <link rel="stylesheet" href="/css/style.css">
+  <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
 </head>
 
 <body>
@@ -46,7 +47,7 @@
           </div>
         </div>
         <figure class="hero-media">
-          <img id="hero-image" src="/images/fotoperfilflor.jpeg" alt="Florencia Moreira">
+          <img id="fotoperfil" src="/images/fotoperfilflor.jpeg" alt="Florencia Moreira">
           <figcaption id="hero-caption"></figcaption>
         </figure>
       </div>
@@ -66,7 +67,7 @@
     <!-- SOBRE MI -->
     <section id="sobre-mi">
       <div class="wrap about-grid">
-        <img id="about-image" src="/images/fotoperfilflor.jpeg" alt="Florencia Moreira">
+        <img id="about-image" src="/images/hero.jpg" alt="Florencia Moreira">
         <div>
           <span class="eyebrow" id="about-eyebrow"></span>
           <h2 id="about-title"></h2>
@@ -135,6 +136,15 @@
   </a>
 
   <script src="/js/main.js"></script>
+  <script>
+    if (window.netlifyIdentity) {
+      window.netlifyIdentity.on("init", user => {
+        if (!user) {
+          window.netlifyIdentity.on("login", () => { document.location.href = "/admin/"; });
+        }
+      });
+    }
+  </script>
 </body>
 
 </html>
