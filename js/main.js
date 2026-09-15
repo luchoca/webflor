@@ -1,3 +1,9 @@
+// Inicializaci�n de Modo Oscuro
+const savedTheme = localStorage.getItem('theme');
+const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
+  document.body.classList.add('dark-theme');
+}
 // Carga /content/site.json y arma toda la página con ese contenido.
 // La clienta edita ese JSON (texto e imágenes) desde /admin sin tocar código.
 
@@ -119,3 +125,15 @@ document.getElementById('contactForm').addEventListener('submit', function (e) {
       status.className = 'form-status err';
     });
 });
+
+
+// Funcionalidad de Toggle de Tema
+const themeBtn = document.getElementById('themeToggle');
+if (themeBtn) {
+  themeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('dark-theme');
+    const isDark = document.body.classList.contains('dark-theme');
+    localStorage.setItem('theme', isDark ? 'dark' : 'light');
+  });
+}
+
