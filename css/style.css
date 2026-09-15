@@ -49,12 +49,19 @@
   --section-py: 160px;
 }
 
+@media (max-width: 768px) {
+  :root {
+    --section-py: 80px;
+  }
+}
+
 /* ================== RESET & BASE ================== */
 *, *::before, *::after { box-sizing: border-box; }
-html { scroll-behavior: smooth; font-size: 100%; background: var(--bg-color); }
+html { scroll-behavior: smooth; font-size: 100%; background: var(--bg-color); overflow-x: hidden; }
 body {
   margin: 0;
   background-color: var(--bg-color);
+  overflow-x: hidden;
   color: var(--ink);
   font-family: var(--font-sans);
   font-size: 1.1rem;
@@ -77,12 +84,12 @@ h1, h2, h3, h4, h5, h6 {
   font-feature-settings: "liga" 1, "kern" 1;
 }
 
-h1 { font-size: clamp(3rem, 7vw, 5.5rem); letter-spacing: -0.03em; }
-h2 { font-size: clamp(2.2rem, 5vw, 3.5rem); letter-spacing: -0.02em; margin-bottom: 2rem; }
-h3 { font-size: clamp(1.4rem, 2.5vw, 1.8rem); letter-spacing: -0.01em; }
+h1 { font-size: clamp(2.2rem, 8vw, 5.5rem); letter-spacing: -0.03em; }
+h2 { font-size: clamp(1.8rem, 6vw, 3.5rem); letter-spacing: -0.02em; margin-bottom: 2rem; }
+h3 { font-size: clamp(1.3rem, 4vw, 1.8rem); letter-spacing: -0.01em; }
 
 .lead { 
-  font-size: clamp(1.15rem, 2vw, 1.4rem); 
+  font-size: clamp(1.05rem, 4vw, 1.4rem); 
   color: var(--ink-soft); 
   max-width: 50ch; 
   margin: 2rem 0 3rem; 
@@ -344,6 +351,11 @@ section { padding: var(--section-py) 0; position: relative; z-index: 2; }
 .hero-media {
   position: relative;
   perspective: 1000px;
+}
+
+@media (max-width: 480px) {
+  .hero-ctas { flex-direction: column; width: 100%; }
+  .hero-ctas .btn { width: 100%; }
 }
 
 @keyframes floatHero {
