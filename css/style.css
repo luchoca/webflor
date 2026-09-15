@@ -524,7 +524,7 @@ section { padding: var(--section-py) 0; position: relative; z-index: 2; }
 
 @media (max-width: 992px) {
   .about-grid { grid-template-columns: 1fr; gap: 60px; }
-  .about-grid img { max-width: 400px; margin: 0 auto; order: -1; }
+  .about-grid img { max-width: 280px; width: 100%; margin: 0 auto; order: -1; }
 }
 
 /* ================== SPECIALTIES & ARTICLES ================== */
@@ -716,10 +716,10 @@ footer {
 }
 
 .brand-text strong::before {
-  content: 'F.M.';
+  content: 'Ψ';
   display: inline-block;
   font-family: var(--font-serif);
-  font-size: 1.8rem;
+  font-size: 2.2rem;
   font-weight: 300;
   color: var(--accent-clay);
   line-height: 1;
