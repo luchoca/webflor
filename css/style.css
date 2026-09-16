@@ -8,21 +8,21 @@
 
 :root {
   /* Exclusive Luxury Palette */
-  --bg-color: #F8F5F0; /* Blanco pastel cálido */
-  --bg-alt: #F1EDE4; /* Crema suave pastel */
-  --bg-sage: #18241D; /* Verde salvia profundo refined */
+  --bg-color: #F5F2EC; /* Marfil cálido */
+  --bg-alt: #EDE8DF; /* Beige piedra suave */
+  --bg-sage: #303A34; /* Verde carbón apagado */
 
-  --ink: #161614; /* Grafito oscuro mineral */
-  --ink-soft: #5C5A55; /* Ceniza suave */
+  --ink: #191918; /* Negro carbón */
+  --ink-soft: #706D68; /* Gris cálido */
 
-  --accent-clay: #AD6B4E; /* Bronce terracota mate refined */
-  --accent-gold: #C6A230; /* Oro sepia tenue */
+  --accent-clay: #B8755D; /* Terracota suave */
+  --accent-gold: #9D806C; /* Taupe cálido */
 
-  --border-solid: rgba(22, 22, 20, 0.08);
+  --border-solid: rgba(25, 25, 24, 0.12);
 
   /* Typography */
-  --font-serif: "Cormorant Garamond", Georgia, serif;
-  --font-sans: "Manrope", "Karla", -apple-system, sans-serif;
+  --font-serif: "Newsreader", Georgia, serif;
+  --font-sans: "Manrope", system-ui, sans-serif;
 
   /* Radii */
   --radius-sm: 4px;
@@ -50,14 +50,14 @@
 }
 
 body.dark-theme {
-  --bg-color: #141A16;
-  --bg-alt: #1A221D;
-  --bg-sage: #202D26;
+  --bg-color: #1D211E;
+  --bg-alt: #252A26;
+  --bg-sage: #343E37;
   --ink: #F7F7F7;
-  --ink-soft: #A3AFA8;
-  --accent-clay: #D38463;
-  --accent-gold: #E8C162;
-  --border-solid: rgba(255, 255, 255, 0.1);
+  --ink-soft: #C0BDB6;
+  --accent-clay: #D0957D;
+  --accent-gold: #C3A895;
+  --border-solid: rgba(255, 255, 255, 0.14);
   
   --shadow-ambient:
     0 4px 12px rgba(0, 0, 0, 0.2),
@@ -85,13 +85,6 @@ body.dark-theme h2,
 body.dark-theme h3 {
   text-shadow: 0 4px 16px rgba(0, 0, 0, 0.6);
   font-weight: 400;
-}
-
-body.dark-theme h1 {
-  background: linear-gradient(120deg, #ffffff 0%, var(--accent-gold) 50%, #ffffff 100%);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
 
 body.dark-theme .brand-text strong {
