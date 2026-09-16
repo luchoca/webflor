@@ -8,8 +8,8 @@
 
 :root {
   /* Exclusive Luxury Palette */
-  --bg-color: #FAF8F2; /* Refined Blanco lino cálido */
-  --bg-alt: #F3EFE6; /* Refined Crema de alabastro */
+  --bg-color: #F8F5F0; /* Blanco pastel cálido */
+  --bg-alt: #F1EDE4; /* Crema suave pastel */
   --bg-sage: #18241D; /* Verde salvia profundo refined */
 
   --ink: #161614; /* Grafito oscuro mineral */
@@ -21,8 +21,8 @@
   --border-solid: rgba(22, 22, 20, 0.08);
 
   /* Typography */
-  --font-serif: "Fraunces", Georgia, serif;
-  --font-sans: "Karla", -apple-system, sans-serif;
+  --font-serif: "Cormorant Garamond", Georgia, serif;
+  --font-sans: "Manrope", "Karla", -apple-system, sans-serif;
 
   /* Radii */
   --radius-sm: 4px;
@@ -137,6 +137,7 @@ body {
   font-family: var(--font-sans);
   font-size: 1.1rem;
   line-height: 1.7;
+  font-weight: 500;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   font-feature-settings: "liga" 1, "kern" 1, "salt" 1;
@@ -181,7 +182,7 @@ h4,
 h5,
 h6 {
   font-family: var(--font-serif);
-  font-weight: 300;
+  font-weight: 500;
   margin: 0;
   line-height: 1.1;
   color: var(--ink);
@@ -195,27 +196,32 @@ h6 {
 }
 
 h1 {
+  font-family: var(--font-serif);
+  font-weight: 600;
   font-size: clamp(2.5rem, 9vw, 6.5rem);
-  letter-spacing: -0.04em;
-  line-height: 1.05;
-  background: linear-gradient(120deg, var(--ink) 0%, var(--accent-clay) 50%, var(--ink) 100%);
-  background-size: 200% auto;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  animation: shineText 8s ease-in-out infinite;
+  letter-spacing: -0.055em;
+  line-height: 0.98;
+  color: var(--accent-clay);
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  -webkit-text-stroke: 0.18px currentColor;
 }
 
 h2 {
+  font-family: var(--font-serif);
   font-size: clamp(2rem, 6.5vw, 4rem);
   letter-spacing: -0.03em;
   margin-bottom: 2rem;
   line-height: 1.1;
+  font-weight: 600;
 }
 
 h3 {
+  font-family: var(--font-serif);
   font-size: clamp(1.4rem, 4.5vw, 2rem);
   letter-spacing: -0.02em;
   line-height: 1.2;
+  font-weight: 600;
 }
 
 .lead {
@@ -224,7 +230,7 @@ h3 {
   max-width: 50ch;
   margin: 2rem 0 3rem;
   line-height: 1.6;
-  font-weight: 300;
+  font-weight: 500;
 }
 
 .eyebrow {
@@ -393,7 +399,7 @@ section {
 }
 
 .brand img {
-  height: 48px;
+  height: 60px;
   width: auto;
   opacity: 0.9;
   transition: opacity 0.6s var(--bezier-smooth);
@@ -1077,6 +1083,32 @@ footer {
   color: var(--accent-clay);
 }
 
+.admin-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  color: rgba(255, 255, 255, 0.7);
+  transition: color 0.6s var(--bezier-smooth), transform 0.6s var(--bezier-smooth);
+}
+
+.admin-link svg {
+  width: 20px;
+  height: 20px;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.admin-link:hover,
+.admin-link:focus-visible {
+  color: var(--accent-gold);
+  transform: rotate(18deg);
+}
+
 @media (max-width: 600px) {
   .footer-row {
     flex-direction: column;
@@ -1146,8 +1178,8 @@ footer {
 /* ================== LOGO ================== */
 #brand-logo {
   display: block;
-  height: 52px;
-  width: 52px;
+  height: 64px;
+  width: 64px;
 }
 
 /* ================== REVEAL ANIMATIONS ================== */

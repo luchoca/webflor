@@ -11,13 +11,19 @@ function waLink(number, message) {
   return `https://wa.me/${number}?text=${encodeURIComponent(message)}`;
 }
 
+function robustText(value, fallback) {
+  const text = typeof value === 'string' ? value.trim() : '';
+  return text || fallback;
+}
+
 async function loadSite() {
   const res = await fetch('/content/site.json', { cache: 'no-store' });
   const d = await res.json();
 
   // Meta
-  document.title = d.meta.title;
-  document.getElementById('meta-description').setAttribute('content', d.meta.description);
+  const siteTitle = robustText(d.meta?.title, `${robustText(d.header?.name, 'Florencia Moreira')} | ${robustText(d.header?.role, 'Psicóloga')} | Psicoterapia en Uruguay`);
+  document.title = siteTitle;
+  document.getElementById('meta-description').setAttribute('content', robustText(d.meta?.description, 'Psicoterapia en Uruguay para adolescentes y adultos. Atención psicológica online y presencial.'));
 
   // Header
   document.getElementById('brand-logo').src = d.header.logo;
@@ -103,6 +109,14 @@ document.getElementById('navToggle').addEventListener('click', () => {
 document.querySelectorAll('.nav-links a').forEach(a =>
   a.addEventListener('click', () => document.getElementById('navLinks').classList.remove('open'))
 );
+
+const adminLink = document.querySelector('.admin-link');
+if (adminLink) {
+  adminLink.addEventListener('click', event => {
+    const proceed = window.confirm('¿Estás segura de que deseas ir a la página de administración? Solo usuarios autorizados pueden acceder.');
+    if (!proceed) event.preventDefault();
+  });
+}
 
 // Envío del formulario de contacto vía Netlify Forms (AJAX, sin recargar la página)
 document.getElementById('contactForm').addEventListener('submit', function (e) {
