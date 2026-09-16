@@ -43,8 +43,6 @@ collections:
               - { label: "Link botón 1", name: "cta_primary_link", widget: "string" }
               - { label: "Texto botón 2", name: "cta_secondary_text", widget: "string" }
               - { label: "Link botón 2", name: "cta_secondary_link", widget: "string" }
-              - { label: "Foto principal", name: "image", widget: "image" }
-              - { label: "Texto bajo la foto", name: "image_caption", widget: "string" }
 
           - label: "Modalidades de atención"
             name: "modalities"

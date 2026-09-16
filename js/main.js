@@ -1,4 +1,4 @@
-// Inicializaci�n de Modo Oscuro
+﻿// Inicializaci�n de Modo Oscuro
 const savedTheme = localStorage.getItem('theme');
 const systemPrefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
 if (savedTheme === 'dark' || (!savedTheme && systemPrefersDark)) {
@@ -33,15 +33,12 @@ async function loadSite() {
   c1.textContent = d.hero.cta_primary_text; c1.href = d.hero.cta_primary_link;
   const c2 = document.getElementById('hero-cta2');
   c2.textContent = d.hero.cta_secondary_text; c2.href = d.hero.cta_secondary_link;
-  document.getElementById('hero-image').src = d.hero.image;
-  document.getElementById('hero-caption').textContent = d.hero.image_caption;
-
   // Modalidades
   document.getElementById('mod-eyebrow').textContent = d.modalities.eyebrow;
   document.getElementById('mod-title').textContent = d.modalities.title;
   const modGrid = document.getElementById('mod-grid');
   modGrid.innerHTML = d.modalities.items.map(item => `
-    <div class="modality-card">
+    <div class="modality-card reveal-up">
       <h3>${item.name}</h3>
       <p>${item.description}</p>
       <a class="btn btn-wa" target="_blank" rel="noopener" href="${waLink(d.contact.whatsapp_number, item.whatsapp_message)}">${item.cta_text}</a>
@@ -59,7 +56,7 @@ async function loadSite() {
   document.getElementById('spec-eyebrow').textContent = d.specialties.eyebrow;
   document.getElementById('spec-title').textContent = d.specialties.title;
   document.getElementById('spec-grid').innerHTML = d.specialties.items.map(s => `
-    <div class="specialty-card"><h3>${s.title}</h3><p>${s.description}</p></div>`).join('');
+    <div class="specialty-card reveal-up"><h3>${s.title}</h3><p>${s.description}</p></div>`).join('');
   document.getElementById('article-list').innerHTML = d.articles.map(a => `
     <div><h4>${a.title}</h4><p>${a.text}</p></div>`).join('');
 
@@ -97,7 +94,7 @@ async function loadSite() {
   fe.textContent = d.footer.email; fe.href = `mailto:${d.footer.email}`;
 }
 
-loadSite().catch(err => console.error('Error cargando contenido del sitio:', err));
+loadSite().then(initScrollReveal).catch(err => console.error('Error cargando contenido del sitio:', err));
 
 // Menú mobile
 document.getElementById('navToggle').addEventListener('click', () => {
@@ -137,3 +134,25 @@ if (themeBtn) {
   });
 }
 
+
+// ============================================
+// SCROLL REVEAL ANIMATIONS
+
+function initScrollReveal() {
+  const revealElements = document.querySelectorAll('.reveal-up, .reveal-fade');
+  if (revealElements.length > 0) {
+    const revealObserver = new IntersectionObserver((entries, observer) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, {
+      rootMargin: '0px 0px -10% 0px',
+      threshold: 0.1
+    });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  }
+}

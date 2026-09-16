@@ -4,7 +4,7 @@
     "description": "Psicóloga en Uruguay. Psicoterapia para adolescentes y adultos. Atención psicológica online y presencial."
   },
   "header": {
-    "logo": "/images/logo.svg",
+    "logo": "/images/logopsico2.png",
     "name": "Florencia Moreira",
     "role": "Psicoterapeuta"
   },
@@ -16,9 +16,7 @@
     "cta_primary_text": "Ver modalidades",
     "cta_primary_link": "#modalidades",
     "cta_secondary_text": "Contactar",
-    "cta_secondary_link": "#contacto",
-    "image": "/images/divan.jpg",
-    "image_caption": "Espacio de psicoterapia"
+    "cta_secondary_link": "#contacto"
   },
   "modalities": {
     "eyebrow": "Formas de atención",
