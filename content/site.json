@@ -31,8 +31,7 @@
     "image": "/images/fotoperfilflor.jpeg",
     "bullets": [
       "Egresada de la Universidad Católica del Uruguay",
-      "Posgrado en Violencia Basada en Género",
-      "Especialista en Sexualidad"
+      "Perspectiva integrativa con enfoque cognitivo-conductual"
     ],
     "areas_label": "Áreas de trabajo",
     "areas": [
@@ -56,8 +55,8 @@
     "cta_secondary_link": "#contacto"
   },
   "footer": {
-    "name": "Florencia Moreira",
-    "text": "Psicoterapeuta · Uruguay",
+    "name": "Florencia Moreira ",
+    "text": "Paysandú, Uruguay",
     "email": "contacto@florenciamoreira.com"
   },
   "specialties": {
